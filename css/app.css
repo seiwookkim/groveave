@@ -1,0 +1,143 @@
+
+#Container {
+	border: 20px solid #004be0;
+	font-family: "proxima-nova",sans-serif;
+	animation: fadein 1s ease-out;
+    -moz-animation: fadein 1s ease-out; /* Firefox */
+    -webkit-animation: fadein 1s ease-out; /* Safari and Chrome */
+    -o-animation: fadein 1s ease-out; /* Opera */
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+#Logo {
+	text-align: center;
+	padding: 1em;
+	animation: fadeInUp 1s ease-out;
+    -moz-animation: fadeInUp 1s ease-out; /* Firefox */
+    -webkit-animation: fadeInUp 1s ease-out; /* Safari and Chrome */
+    -o-animation: fadeInUp 1s ease-out; /* Opera */
+    -webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+#IntroBox {
+	background: url(../img/banner_bg.jpg) top center no-repeat;
+	text-align: center;
+	padding: 4em;
+	animation: fadeInUp 1s ease-out;
+    -moz-animation: fadeInUp 1s ease-out; /* Firefox */
+    -webkit-animation: fadeInUp 1s ease-out; /* Safari and Chrome */
+    -o-animation: fadeInUp 1s ease-out; /* Opera */
+    -webkit-animation-delay: 0.8s;
+	-moz-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+	width: 100%;
+	max-width: 100rem;
+	height: 506px;
+}
+	#IntroBox h1 {
+		font-size: 3.5em;
+		font-weight: bold;
+	}
+	#IntroBox p{
+		font-size: 1em;
+	}
+
+#SignUp{
+	padding-top: 3em;
+	text-align: center;
+	animation: fadeInUp 1s ease-out;
+    -moz-animation: fadeInUp 1s ease-out; /* Firefox */
+    -webkit-animation: fadeInUp 1s ease-out; /* Safari and Chrome */
+    -o-animation: fadeInUp 1s ease-out; /* Opera */
+    -webkit-animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+	#SignUp h2{
+		font-size: 1.8em;
+		font-weight: bold;
+	}
+	#SignUp p{
+		font-size: 0.8em;
+	}
+
+#Footer {
+	animation: fadeInUp 1s ease-out;
+    -moz-animation: fadeInUp 1s ease-out; /* Firefox */
+    -webkit-animation: fadeInUp 1s ease-out; /* Safari and Chrome */
+    -o-animation: fadeInUp 1s ease-out; /* Opera */
+    webkit-animation-delay: 1.6s;
+	-moz-animation-delay: 1.6s;
+	animation-delay: 1.6s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+	#Footer ul{
+		text-align: center;
+		font-weight: bold;
+		font-size: 0.8em;
+		padding-top: 4em;
+	}
+		#Footer ul li {
+			display: inline;
+			padding-right: 1em;
+		}
+
+		#Footer ul li a{
+			color: #000;
+		}
+			#Footer ul li a:hover {
+				color: #004be0;
+			}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
