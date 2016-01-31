@@ -14,7 +14,10 @@
 		padding: 2.5em;
 		height: 300px;}
 	#SignUp h2{ font-size: 1.3rem; }
-	#SignUp .button { float: none;}
+	#SignUp .left-align { float: none;}
+	#IntroBox h1.download {
+		padding-top: 1.9em;
+	}
  }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -24,7 +27,10 @@
 		padding: 3em;
 		height: 300px;}
 	#SignUp h2{ font-size: 1.4rem; }
-	#SignUp .button { float: left;}
+	#SignUp .left-align { float: left; }
+	#IntroBox h1.download {
+		padding-top: 1.4em;
+	}
 }
 
 @media screen and (min-width: 64em) {
@@ -35,6 +41,9 @@
 		height: 500px;}
 	#SignUp h2{ font-size: 1.8rem; }
 	#SignUp .left-align { float: left; }
+	#IntroBox h1.download {
+		padding-top: 2.4em;
+	}
 }
 
 #Container {
@@ -86,7 +95,6 @@
 	}
 	#IntroBox h1.download {
 		color: #ffffff;
-		padding-top: 1.3em;
 	}
 	
 
@@ -106,12 +114,14 @@
 	#SignUp h2{
 		font-family: "proxima-nova",sans-serif;
 		font-weight: bold;
+		line-height: 1.2em;
 	}
 	#SignUp p{
 		font-size: 0.8rem;
 	}
 	#SignUp .button {
 		background-color: #004be0;
+		font-weight: bold;
 	}
 }
 
