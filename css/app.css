@@ -34,7 +34,7 @@
 		padding: 4em;
 		height: 500px;}
 	#SignUp h2{ font-size: 1.8rem; }
-	#SignUp .button { float: left;}
+	#SignUp .left-align { float: left; }
 }
 
 #Container {
@@ -75,11 +75,18 @@
 	animation-fill-mode:forwards;
 	opacity: 0;
 }
+	#IntroBox.download {
+		background: url(../img/grove-ave-ebook-bg.jpg) center center no-repeat;
+	}
 	#IntroBox h1 {
 		font-family: "proxima-nova",sans-serif;
 		font-weight: bold;
 		line-height: 1.1em;
 		margin-bottom: .3em;
+	}
+	#IntroBox h1.download {
+		color: #ffffff;
+		padding-top: 1.3em;
 	}
 	
 
