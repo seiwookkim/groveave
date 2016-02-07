@@ -119,6 +119,11 @@
 	#SignUp p{
 		font-size: 0.8rem;
 	}
+	#SignUp p.footnote {
+		font-size: 0.6rem;
+		line-height: 0.9rem;
+		text-align: left;
+	}
 	#SignUp .button {
 		background-color: #004be0;
 		font-weight: bold;
