@@ -8,42 +8,51 @@
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-	#IntroBox h1 {font-size: 2rem;}
-	#IntroBox p{ font-size: 1rem; }
 	#IntroBox {
 		padding: 2.5em;
 		height: 300px;}
+		#IntroBox h1 { font-size: 2rem;}
+			#IntroBox h1.download { padding-top: 1.9em;}
+		#IntroBox p{ font-size: 1rem; }
 	#SignUp h2{ font-size: 1.3rem; }
 	#SignUp .left-align { float: none;}
-	#IntroBox h1.download {
-		padding-top: 1.9em;
-	}
- }
+	#StarterIntro {
+		padding: 2.5em;
+		height: 347px;}
+		#StarterIntro h1 {font-size: 2rem;}
+	#ProductDesc h2{ font-size: 1.3rem; }
+}
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	#IntroBox h1 {font-size: 2.5em;}
-	#IntroBox p{ font-size: 1rem; }
 	#IntroBox {
 		padding: 3em;
 		height: 300px;}
+		#IntroBox h1 {font-size: 2.5em;}
+			#IntroBox h1.download { padding-top: 1.4em;}
+		#IntroBox p{ font-size: 1rem; }
 	#SignUp h2{ font-size: 1.4rem; }
 	#SignUp .left-align { float: left; }
-	#IntroBox h1.download {
-		padding-top: 1.4em;
-	}
+	#StarterIntro {
+		padding: 5em;
+		height: 347px;}
+		#StarterIntro h1 {font-size: 2.5em;}
+	#ProductDesc h2{ font-size: 1.4rem; }
 }
 
 @media screen and (min-width: 64em) {
-	#IntroBox h1 {font-size: 3.1em;}
-	#IntroBox p{ font-size: 1rem; }
 	#IntroBox {
 		padding: 4em;
 		height: 500px;}
+		#IntroBox h1 {font-size: 3.1em;}
+			#IntroBox h1.download { padding-top: 2.4em; }
+		#IntroBox p{ font-size: 1rem; }
 	#SignUp h2{ font-size: 1.8rem; }
 	#SignUp .left-align { float: left; }
-	#IntroBox h1.download {
-		padding-top: 2.4em;
-	}
+	#StarterIntro {
+		padding: 5em;
+		height: 347px;}
+		#StarterIntro h1 {font-size: 3.1em;}
+	#ProductDesc h2{ font-size: 1.8rem; }
 }
 
 #Container {
@@ -96,7 +105,27 @@
 	#IntroBox h1.download {
 		color: #ffffff;
 	}
-	
+
+#StarterIntro {
+	background: url(../img/trees_bg.jpg) center center no-repeat;
+	text-align: center;
+	animation: fadeInUp 1s ease-out;
+    -moz-animation: fadeInUp 1s ease-out; /* Firefox */
+    -webkit-animation: fadeInUp 1s ease-out; /* Safari and Chrome */
+    -o-animation: fadeInUp 1s ease-out; /* Opera */
+    -webkit-animation-delay: 0.8s;
+	-moz-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+	#StarterIntro h1 {
+		font-family: "proxima-nova",sans-serif;
+		font-weight: bold;
+		line-height: 1.1em;
+		margin-bottom: .3em;
+		color: #fff;
+	}
 
 #SignUp{
 	padding-top: 3em;
@@ -129,6 +158,49 @@
 		font-weight: bold;
 	}
 }
+
+#ProductDesc{
+	background: #f2f2f2;
+	padding-top: 3em;
+	text-align: center;
+	animation: fadeInUp 1s ease-out;
+    -moz-animation: fadeInUp 1s ease-out; /* Firefox */
+    -webkit-animation: fadeInUp 1s ease-out; /* Safari and Chrome */
+    -o-animation: fadeInUp 1s ease-out; /* Opera */
+    -webkit-animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+	#ProductDesc h2{
+		font-family: "proxima-nova",sans-serif;
+		font-weight: bold;
+		line-height: 1.2em;
+	}
+	#ProductDesc p{
+		font-size: 0.8rem;
+	}
+	#ProductDesc .button {
+		background-color: #004be0;
+		font-weight: bold;
+	}
+}
+
+.circleimage {
+    border-radius: 50%;
+}
+
+.main-gallery,.gallery-nav{visibility:visible}
+.flickity-enabled{visibility:visible}
+.gallery-nav .gallery-cell{height:60px;width:60px;list-style:none;border:1px solid #fff;margin:0 10px;background-size:cover;background-position:center center}
+.gallery-nav .gallery-cell img{height:100%}
+.main-gallery{width: 200px;}
+.main-gallery img{height:100%}
+
+.thumbs li{list-style:none;height:100%}
+.gallery-nav .gallery-cell:before{font-size:50px;line-height:80px}
+.gallery-nav .gallery-cell.is-nav-selected{border:1px solid #93D22A}
 
 #Footer {
 	animation: fadeInUp 1s ease-out;
