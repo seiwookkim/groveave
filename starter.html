@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grove Ave</title>
+    <title>Starter | Grove Ave</title>
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" href="slidebars/slidebars.css">
     <script src="js/flickity.pkgd.min.js"></script>
 
     <script src="https://use.typekit.net/psh2xcz.js"></script>
@@ -27,6 +28,16 @@
 <meta property="og:description"        content="Grove Ave empowers individuals who want to achieve more. We’re on a mission to help our customers accomplish their goals through our products, content, and tools." />
 <meta property="og:image"              content="http://www.groveave.co/img/fb_share2.jpg" />
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="slidebars/slidebars.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+        });
+      }) (jQuery);
+    </script>
+
   </head>
   <body>
     <!-- Google Tag Manager -->
@@ -38,19 +49,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TNG582');</script>
 <!-- End Google Tag Manager -->
-    <div id="Container">
+    
 
-      <div class="row" id="Header">
-        <nav class="nav-left">
-          <a href="">Shop</a>
-          <a href="">About</a>
-        </nav>
-        <a href="index.html"><img src="img/groveave_logo.svg" width="100px" class="logo"  /></a>
-        <nav class="nav-right">
-          <a href="#">Login</a>
-          <img src="img/cart_icon.gif" class="cart-icon" />
-        </nav>
-      </div>
+<div id="Container">
+  <div id="sb-site">
+    <div class="row" id="Header">
+      <nav class="nav-left">
+        <a href="">Shop</a>
+        <a href="">About</a>
+      </nav>
+      <a href="index.html"><img src="img/groveave_logo.svg" width="100px" class="logo"  /></a>
+      <nav class="nav-right">
+        <a href="#">Login</a>
+        <img src="img/cart_icon.gif" class="cart-icon" />
+      </nav>
+    </div>
+    <div class="row" id="HeaderMobile">
+        <div class="border-menu sb-toggle-right"></div>
+      <a href="index.html"><img src="img/groveave_logo.svg" width="100px" class="logo"  /></a>
+    </div>
 
       <div class="row" id="ProductDesc">
         <div class="large-8 medium-9 small-10 large-centered medium-centered small-centered columns">
@@ -81,7 +98,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               
             </div>
             <div class="large-7 medium-7 small-12 columns">
-              
               <div class="row">
                 <div class="large-10 medium-10 small-10 large-centered medium-centered small-centered columns">
                   <h2>Starter</h2>
@@ -92,7 +108,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="large-5 medium-5 small-12 columns">
                       <input type="submit" value="Add to Cart" name="addtocart" id="addtocart" class="button left-align">
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -102,12 +117,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
       </div>
       <div class="row" id="StarterIntro">
-        <div class="large-10 medium-10 columns large-centered medium-centered small-centered">
+        <div class="large-10 medium-10 small-12 columns large-centered medium-centered small-centered">
           <h1>A SUPPLEMENT FOR YOUR GROWTH: ENERGY, FOCUS, ALERTNESS & IMMUNITY SUPPORT</h1>
         </div>
       </div>
       <div class="row" id="ProductDetails">
         <div class="large-10 medium-10 columns large-centered medium-centered small-centered">
+
           <div class="row intro">
             <div class="large-6 medium-6 large-centered medium-centered small-centered columns">
               <h3>Ingredients</h3>
@@ -116,7 +132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
 
           <div class="row">
-            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+            <div class="large-8 medium-8 small-10 large-centered medium-centered small-centered columns">
               <div class="row detail">
                 <div class="large-4 medium-4 columns">
                   <img src="img/product_beans.jpg" class="circleimage" />
@@ -126,10 +142,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <p>Caffeine is consumed worldwide for its energy-boosting effects. For thousands of years, caffeine has been used as a cognitive enhancer to improve attention, concentration, and working memory. </p>
                 </div>
               </div>
-           </div>
+            </div>
+          </div>
 
-           <div class="row ">
-            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+          <div class="row ">
+            <div class="large-8 medium-8 small-10 large-centered medium-centered small-centered columns">
               <div class="row detail">
                 <div class="large-4 medium-4 columns">
                   <img src="img/product_beans.jpg" class="circleimage" />
@@ -139,10 +156,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <p>A naturally occuring amino acid found in green tea, L-theanine balances out the caffeine by helping your mind stay relaxed. L-theanine has been shown to improve learning and memory by modulating levels of neurotransmitters in the brain.</p>
                 </div>
               </div>
-           </div>
+            </div>
+          </div>
 
-           <div class="row ">
-            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+          <div class="row ">
+            <div class="large-8 medium-8 small-10 large-centered medium-centered small-centered columns">
               <div class="row detail">
                 <div class="large-4 medium-4 columns">
                   <img src="img/product_beans.jpg" class="circleimage" />
@@ -152,10 +170,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <p>From a plant that was widely used by Native Americans for its medicinal qualities, echinacea extract has been shown to have beneficial effects on your immune system, boosting the activity of several different types of cells that are integral for natural immune responses.</p>
                 </div>
               </div>
-           </div>
+            </div>
+          </div>
 
-           <div class="row ">
-            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+          <div class="row ">
+            <div class="large-8 medium-8 small-10 large-centered medium-centered small-centered columns">
               <div class="row detail">
                 <div class="large-4 medium-4 columns">
                   <img src="img/product_beans.jpg" class="circleimage" />
@@ -165,9 +184,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <p>Vitamin C is an essiential nutrient involved in many of your body’s metabolic functions and is found naturally in fruits and berries. Vitamin C is also directly involved in the production of neurotransmitters that provide chemical signlas in the brain.</p>
                 </div>
               </div>
-           </div>
-
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -200,11 +219,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li><a href="mailto:info@groveave.co">CONTACT US</a></li>
         </div>
       </div>
-
     </div>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <div id="MobileNav" class="sb-slidebar sb-right">
+      <nav class="nav-mobile">
+        <a href="">Shop</a>
+        <a href="">About</a>
+        <a href="#">Login</a>
+        <a href="#">Cart</a>
+      </nav>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/what-input.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
   </body>
 </html>

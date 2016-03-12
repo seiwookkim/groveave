@@ -19,8 +19,11 @@
 	#StarterIntro {
 		padding: 2.5em;
 		height: 347px;}
-		#StarterIntro h1 {font-size: 2rem;}
+		#StarterIntro h1 {font-size: 1.8rem; margin-top: 0.5em;}
 	#ProductDesc h2{ font-size: 1.3rem; }
+	.main-gallery li {width: 100%; height: 100%;}
+	#HeaderMobile { opacity: 1; }
+	#Header {display: none;}
 }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -37,6 +40,8 @@
 		height: 347px;}
 		#StarterIntro h1 {font-size: 2.5em;}
 	#ProductDesc h2{ font-size: 1.4rem; }
+	.main-gallery li {width: 100%; height: 100%;}
+	#HeaderMobile { display: none; }
 }
 
 @media screen and (min-width: 64em) {
@@ -51,8 +56,10 @@
 	#StarterIntro {
 		padding: 5em;
 		height: 347px;}
-		#StarterIntro h1 {font-size: 3.1em;}
+		#StarterIntro h1 {font-size: 3.1em; margin-top: 0.7em;}
 	#ProductDesc h2{ font-size: 1.8rem; }
+	.main-gallery li {width: 450px; height: 450px;}
+	#HeaderMobile { display: none; }
 }
 
 #Container {
@@ -105,6 +112,68 @@
 		margin: 15px 20px 0 10px;
 	}
 
+#HeaderMobile {
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+	background: #fff;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+	#HeaderMobile .logo {
+		width: 100px;
+		margin: 0 auto;
+	}
+
+	.sb-slidebar nav {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		background: #000;
+		
+	}
+		.sb-slidebar nav a {
+			float: left;
+			width: 100%;
+			color: #fff;
+			padding: 5px 0 5px 20px;
+			margin: 0;
+			text-align: left;
+		}
+		.sb-slidebar nav a:hover {
+			background: #888;
+		}
+
+#sb-site, .sb-site-container {
+}
+
+#MobileNav.sb-slidebar {
+	z-index: 0;
+	top: 20px;
+	border-right: 20px solid #004be0;
+}
+
+html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-open-right, .sb-close {
+	cursor: pointer;
+}
+
+.border-menu {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  z-index: 9999;
+}
+.border-menu:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 12px;
+  border-top: 7px double #000;
+  border-bottom: 2px solid #000;
+}
+
 #Logo {
 	text-align: center;
 	padding: 1em;
@@ -147,6 +216,7 @@
 
 #StarterIntro {
 	background: url(../img/trees_bg.jpg) center center no-repeat;
+	background-size: 100% 100%;
 	text-align: center;
 	animation: fadeInUp 1s ease-out;
     -moz-animation: fadeInUp 1s ease-out; /* Firefox */
@@ -218,12 +288,13 @@
 		font-weight: bold;
 		font-size: 3.0em;
 		line-height: 1.2em;
+		margin: 20px 0 10px 0;
 	}
 	#ProductDesc h3 {
 		font-weight: bold;
 	}
 	#ProductDesc p{
-		font-size: 0.8rem;
+		font-size: 1.0rem;
 	}
 	#ProductDesc .button {
 		background-color: #004be0;
@@ -266,6 +337,7 @@
 	float: left;
 	width: 100%;
     border-radius: 50%;
+    margin: 0 0 20px 0;
 }
 
 #Guarantee {
@@ -294,8 +366,8 @@
 .flickity-enabled{visibility:visible}
 .gallery-nav .gallery-cell{height:60px;width:60px;list-style:none;border:1px solid #fff;margin:0 10px;background-size:cover;background-position:center center}
 .gallery-nav .gallery-cell img{height:100%}
-.main-gallery {width: 400px; height: 400px;}
-.main-gallery li {width: 400px; height: 400px;}
+.main-gallery {width: 100%; height: 100%;}
+
 .main-gallery img{height:100%}
 
 .thumbs li{list-style:none;height:100%}
