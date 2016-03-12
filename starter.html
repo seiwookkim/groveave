@@ -40,16 +40,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
     <div id="Container">
 
-      <div class="row" id="Logo">
-        <nav>
+      <div class="row" id="Header">
+        <nav class="nav-left">
           <a href="">Shop</a>
           <a href="">About</a>
         </nav>
-        <img src="img/groveave_logo.svg" width="100px"  />
-        <a href="#">Login</a>
-        <img src="img/cart_icon.gif" />
+        <a href="index.html"><img src="img/groveave_logo.svg" width="100px" class="logo"  /></a>
+        <nav class="nav-right">
+          <a href="#">Login</a>
+          <img src="img/cart_icon.gif" class="cart-icon" />
+        </nav>
       </div>
-      
+
       <div class="row" id="ProductDesc">
         <div class="large-8 medium-9 small-10 large-centered medium-centered small-centered columns">
           <div class="row">
@@ -64,8 +66,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <li>
                   <img src="http://s3.amazonaws.com/cratejoy_vendor_images/38d7aa4f45ab4ba7afc648c9571813e1.gif" class="product_image"   ref="//s3.amazonaws.com/cratejoy_vendor_images/38d7aa4f45ab4ba7afc648c9571813e1.gif">
                 </li>
-            </ul>
-            <ul class="gallery-nav">
+              </ul>
+              <ul class="gallery-nav">
                 <li>
                   <img src="http://s3.amazonaws.com/cratejoy_vendor_images/9bf8d75710fb4dfd8c406d7878983b35.jpeg" class="product_image"   ref="//s3.amazonaws.com/cratejoy_vendor_images/9bf8d75710fb4dfd8c406d7878983b35.jpeg">
                 </li>
@@ -75,7 +77,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <li>
                   <img src="http://s3.amazonaws.com/cratejoy_vendor_images/38d7aa4f45ab4ba7afc648c9571813e1.gif" class="product_image"   ref="//s3.amazonaws.com/cratejoy_vendor_images/38d7aa4f45ab4ba7afc648c9571813e1.gif">
                 </li>
-            </ul>
+              </ul>
               
             </div>
             <div class="large-7 medium-7 small-12 columns">
@@ -87,11 +89,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <h3>$30</h3>
                   <p>Single Bottle, 30 vegetable capsules</p>
                   <div class="row">
-                    
-                    <div class="large-8 medium-8 small-12 columns">
-                      <input type="text" value="" name="quantity" class="email" id="quantity" placeholder="1" required>
-                    </div>
-                    <div class="large-4 medium-4 small-12 columns">
+                    <div class="large-5 medium-5 small-12 columns">
                       <input type="submit" value="Add to Cart" name="addtocart" id="addtocart" class="button left-align">
                     </div>
 
@@ -101,8 +99,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </div>
         </div>
+    
       </div>
-
       <div class="row" id="StarterIntro">
         <div class="large-10 medium-10 columns large-centered medium-centered small-centered">
           <h1>A SUPPLEMENT FOR YOUR GROWTH: ENERGY, FOCUS, ALERTNESS & IMMUNITY SUPPORT</h1>
@@ -110,20 +108,89 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
       <div class="row" id="ProductDetails">
         <div class="large-10 medium-10 columns large-centered medium-centered small-centered">
-          <h3>Ingredients</h3>
-          <p>Grove Ave Starter is a special blend of four key ingredients designed to give your body and mind a daily boost. </p>
+          <div class="row intro">
+            <div class="large-6 medium-6 large-centered medium-centered small-centered columns">
+              <h3>Ingredients</h3>
+              <p>Grove Ave Starter is a special blend of four key ingredients designed to give your body and mind a daily boost. </p>
+            </div>
+          </div>
+
           <div class="row">
-            <div class="large-3 medium-3 columns">
-              <img src="img/product_beans.jpg" class="circlepicture" />
-            </div>
-            <div class="large-5 medium-5 columns">
-              <h4>CAFFEINE</h4>
-              <p>Caffeine is consumed worldwide for its energy-boosting effects. For thousands of years, caffeine has been used as a cognitive enhancer to improve attention, concentration, and working memory. </p>
-            </div>
+            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+              <div class="row detail">
+                <div class="large-4 medium-4 columns">
+                  <img src="img/product_beans.jpg" class="circleimage" />
+                </div>
+                <div class="large-8 medium-8 columns">
+                  <h4>CAFFEINE</h4>
+                  <p>Caffeine is consumed worldwide for its energy-boosting effects. For thousands of years, caffeine has been used as a cognitive enhancer to improve attention, concentration, and working memory. </p>
+                </div>
+              </div>
+           </div>
+
+           <div class="row ">
+            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+              <div class="row detail">
+                <div class="large-4 medium-4 columns">
+                  <img src="img/product_beans.jpg" class="circleimage" />
+                </div>
+                <div class="large-8 medium-8 columns">
+                  <h4>L-THEANINE</h4>
+                  <p>A naturally occuring amino acid found in green tea, L-theanine balances out the caffeine by helping your mind stay relaxed. L-theanine has been shown to improve learning and memory by modulating levels of neurotransmitters in the brain.</p>
+                </div>
+              </div>
+           </div>
+
+           <div class="row ">
+            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+              <div class="row detail">
+                <div class="large-4 medium-4 columns">
+                  <img src="img/product_beans.jpg" class="circleimage" />
+                </div>
+                <div class="large-8 medium-8 columns">
+                  <h4>ECHINACEA</h4>
+                  <p>From a plant that was widely used by Native Americans for its medicinal qualities, echinacea extract has been shown to have beneficial effects on your immune system, boosting the activity of several different types of cells that are integral for natural immune responses.</p>
+                </div>
+              </div>
+           </div>
+
+           <div class="row ">
+            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+              <div class="row detail">
+                <div class="large-4 medium-4 columns">
+                  <img src="img/product_beans.jpg" class="circleimage" />
+                </div>
+                <div class="large-8 medium-8 columns">
+                  <h4>VITAMIN C</h4>
+                  <p>Vitamin C is an essiential nutrient involved in many of your body’s metabolic functions and is found naturally in fruits and berries. Vitamin C is also directly involved in the production of neurotransmitters that provide chemical signlas in the brain.</p>
+                </div>
+              </div>
+           </div>
+
           </div>
         </div>
       </div>
 
+      <div class="row" id="Guarantee">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+              <img src="img/moneyback.svg" width="150px" class="icon" />
+              <h3>NO HASSLE MONEY BACK GUARANTEE</h3>
+              <p>We stand by the quality of our product. If for any reason you are dissatisfied or feel the product is ineffective, send it back and we’ll issue a full refund, no questions asked.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="Disclaimer">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-8 medium-8 large-centered medium-centered small-centered columns">
+              <p><strong>Disclaimer:</strong> These statements have not been evaluated by the FDA. These products are not intended to diagnose, treat, cure, or prevent any disease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row" id="Footer">
         <div class="large-12 columns">
         <ul>
