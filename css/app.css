@@ -86,6 +86,7 @@
 		float: left;
 		color: #000;
 		font-size: 0.8em;
+		font-weight: bold;
 		margin: 20px 10px;
 		text-transform: uppercase;
 	}
@@ -159,19 +160,11 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 
 .border-menu {
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 28px;
+  right: 20px;
   z-index: 9999;
-}
-.border-menu:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 12px;
-  border-top: 7px double #000;
-  border-bottom: 2px solid #000;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 #Logo {
