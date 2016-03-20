@@ -11,8 +11,12 @@
 	#IntroBox {
 		padding: 2.5em;
 		height: 300px;}
+		#IntroBox.coming-soon {
+			height: 180px;
+		}
 		#IntroBox h1 { font-size: 2rem;}
 			#IntroBox h1.download { padding-top: 1.9em;}
+		#IntroBox h2 { font-size: 1rem; padding-top: 0.7em;}
 		#IntroBox p{ font-size: 1rem; }
 	#SignUp h2{ font-size: 1.3rem; }
 	#SignUp .left-align { float: none;}
@@ -30,8 +34,12 @@
 	#IntroBox {
 		padding: 3em;
 		height: 300px;}
+		#IntroBox.coming-soon {
+			height: 210px;
+		}
 		#IntroBox h1 {font-size: 2.5em;}
 			#IntroBox h1.download { padding-top: 1.4em;}
+		#IntroBox h2 { font-size: 1.3rem; padding-top: 0.4em;}
 		#IntroBox p{ font-size: 1rem; }
 	#SignUp h2{ font-size: 1.4rem; }
 	#SignUp .left-align { float: left; }
@@ -48,17 +56,21 @@
 	#IntroBox {
 		padding: 4em;
 		height: 500px;}
+		#IntroBox.coming-soon {
+			height: 350px;
+		}
 		#IntroBox h1 {font-size: 3.1em;}
 			#IntroBox h1.download { padding-top: 2.4em; }
+		#IntroBox h2 { font-size: 1.5rem; padding-top: 0.5em;}
 		#IntroBox p{ font-size: 1rem; }
 	#SignUp h2{ font-size: 1.8rem; }
 	#SignUp .left-align { float: left; }
 	#StarterIntro {
-		padding: 5em;
+		padding: 2em;
 		height: 347px;}
 		#StarterIntro h1 {font-size: 3.1em; margin-top: 0.7em;}
 	#ProductDesc h2{ font-size: 1.8rem; }
-	.main-gallery li {width: 450px; height: 450px;}
+	.main-gallery li {width: 100%; height: 100%;}
 	#HeaderMobile { display: none; }
 }
 
@@ -82,7 +94,7 @@
 	text-align: center;
 	padding: 20px 0 20px 0;
 }
-	#Header nav a {
+	#Header nav a.navlink {
 		float: left;
 		color: #000;
 		font-size: 0.8em;
@@ -90,7 +102,7 @@
 		margin: 20px 10px;
 		text-transform: uppercase;
 	}
-		#Header nav a:hover {
+		#Header nav a.navlink:hover {
 			color: #004be0;
 		}
 
@@ -206,6 +218,12 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 	#IntroBox h1.download {
 		color: #ffffff;
 	}
+	#IntroBox h2 {
+		font-family: "proxima-nova",sans-serif;
+		font-weight: bold;
+		line-height: 1.1em;
+		margin-bottom: .3em;
+	}
 
 #StarterIntro {
 	background: url(../img/trees_bg.jpg) center center no-repeat;
@@ -248,7 +266,7 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 		line-height: 1.2em;
 	}
 	#SignUp p{
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 	}
 	#SignUp p.footnote {
 		font-size: 0.6rem;
