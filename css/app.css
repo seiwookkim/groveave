@@ -24,7 +24,7 @@
 		padding: 2.5em;
 		height: 347px;}
 		#StarterIntro h1 {font-size: 1.8rem; margin-top: 0.5em;}
-	#ProductDesc h2{ font-size: 1.3rem; }
+	#ProductDesc h2{ font-size: 1.3rem; margin: 0px 0 10px 0;}
 	.main-gallery li {width: 100%; height: 100%;}
 	#HeaderMobile { opacity: 1; }
 	#Header {display: none;}
@@ -47,7 +47,7 @@
 		padding: 5em;
 		height: 347px;}
 		#StarterIntro h1 {font-size: 2.5em;}
-	#ProductDesc h2{ font-size: 1.4rem; }
+	#ProductDesc h2{ font-size: 1.4rem; margin: 20px 0 10px 0;}
 	.main-gallery li {width: 100%; height: 100%;}
 	#HeaderMobile { display: none; }
 }
@@ -69,7 +69,7 @@
 		padding: 2em;
 		height: 347px;}
 		#StarterIntro h1 {font-size: 3.1em; margin-top: 0.7em;}
-	#ProductDesc h2{ font-size: 1.8rem; }
+	#ProductDesc h2{ font-size: 1.8rem; margin: 40px 0 10px 0;}
 	.main-gallery li {width: 100%; height: 100%;}
 	#HeaderMobile { display: none; }
 }
@@ -220,7 +220,7 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 	}
 	#IntroBox h2 {
 		font-family: "proxima-nova",sans-serif;
-		font-weight: bold;
+		font-weight: normal;
 		line-height: 1.1em;
 		margin-bottom: .3em;
 	}
@@ -299,7 +299,6 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 		font-weight: bold;
 		font-size: 3.0em;
 		line-height: 1.2em;
-		margin: 20px 0 10px 0;
 	}
 	#ProductDesc h3 {
 		font-weight: bold;
