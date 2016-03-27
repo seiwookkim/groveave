@@ -20,14 +20,22 @@
 		#IntroBox p{ font-size: 1rem; }
 	#SignUp h2{ font-size: 1.3rem; }
 	#SignUp .left-align { float: none;}
-	#StarterIntro {
+	#DarkImageBlock.trees {
 		padding: 2.5em;
 		height: 347px;}
-		#StarterIntro h1 {font-size: 1.8rem; margin-top: 0.5em;}
+		#DarkImageBlock.books {
+		padding: 3.5em;
+		height: 347px;}
+		#DarkImageBlock h1 {font-size: 1.8rem; margin-top: 0.5em;}
 	#ProductDesc h2{ font-size: 1.3rem; margin: 0px 0 10px 0;}
 	.main-gallery li {width: 100%; height: 100%;}
 	#HeaderMobile { opacity: 1; }
 	#Header {display: none;}
+	.bookcover {text-align: center;}
+	#BookList h3 {
+		font-size: 1.5em;
+		line-height: 1.2em;
+	}
 }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -43,10 +51,13 @@
 		#IntroBox p{ font-size: 1rem; }
 	#SignUp h2{ font-size: 1.4rem; }
 	#SignUp .left-align { float: left; }
-	#StarterIntro {
+	#DarkImageBlock.trees {
 		padding: 5em;
 		height: 347px;}
-		#StarterIntro h1 {font-size: 2.5em;}
+		#DarkImageBlock.books {
+		padding: 6em;
+		height: 347px;}
+		#DarkImageBlock h1 {font-size: 2.5em;}
 	#ProductDesc h2{ font-size: 1.4rem; margin: 20px 0 10px 0;}
 	.main-gallery li {width: 100%; height: 100%;}
 	#HeaderMobile { display: none; }
@@ -65,10 +76,13 @@
 		#IntroBox p{ font-size: 1rem; }
 	#SignUp h2{ font-size: 1.8rem; }
 	#SignUp .left-align { float: left; }
-	#StarterIntro {
+	#DarkImageBlock.trees {
 		padding: 2em;
 		height: 347px;}
-		#StarterIntro h1 {font-size: 3.1em; margin-top: 0.7em;}
+		#DarkImageBlock.books {
+		padding: 3em;
+		height: 347px;}
+		#DarkImageBlock h1 {font-size: 3.1em; margin-top: 0.7em;}
 	#ProductDesc h2{ font-size: 1.8rem; margin: 30px 0 10px 0;}
 	.main-gallery li {width: 100%; height: 100%;}
 	#HeaderMobile { display: none; }
@@ -226,8 +240,8 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 		margin-bottom: .3em;
 	}
 
-#StarterIntro {
-	background: url(../img/trees_bg.jpg) center center no-repeat;
+#DarkImageBlock {
+	background-position: center;
 	background-size: 100% 100%;
 	text-align: center;
 	animation: fadeInUp 1s ease-out;
@@ -240,10 +254,23 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 	animation-fill-mode:forwards;
 	opacity: 0;
 }
-	#StarterIntro h1 {
+	#DarkImageBlock.trees{
+		background-image: url(../img/trees_bg.jpg);
+	}
+	#DarkImageBlock.books {
+		background: url(../img/growthlibrary/growthlibrary_books_bg.jpg);
+	}
+	#DarkImageBlock h1 {
 		font-family: "proxima-nova",sans-serif;
 		font-weight: bold;
 		line-height: 1.1em;
+		margin-bottom: .3em;
+		color: #fff;
+	}
+	#DarkImageBlock p {
+		font-family: "proxima-nova",sans-serif;
+		font-weight: normal;
+		line-height: 1.6em;
 		margin-bottom: .3em;
 		color: #fff;
 	}
@@ -343,6 +370,49 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 		text-align: left;
 	}
 
+#BookList {
+	padding: 40px 0 0 0;
+}
+	#BookList h3 {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: bold;
+	}
+	#BookList h4 {
+		font-size: 1.2em;
+		text-align: left;
+		line-height: 1.3em;
+		font-weight: bold;
+	}
+	#BookList p{
+		font-size: 0.9em;
+		line-height: 1.5em;
+		text-align: left;
+	}
+
+	#BookList .intro {
+		margin: 0px 0 30px 0;
+	}
+		#BookList .intro p {
+			text-align: center;
+		}
+
+	#BookList .detail {
+		margin: 0 0 0px 0;
+	}
+		#BookList .detail p{
+		text-align: left;
+	}
+	#BookList section {
+		margin: 0 0 40px 0;
+	}
+	#BookList .bookcover {
+		margin: 0 0 20px 0;
+	}
+	#BookList .description {
+		margin: 0 0 20px 0;
+		padding-right: 30px;
+	}
 
 .circleimage {
 	float: left;
@@ -351,25 +421,26 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
     margin: 0 0 20px 0;
 }
 
-#Guarantee {
+#GrayBlock {
 	background: #dfdfdf;
 	text-align: center;
 	padding: 40px 0 40px;
 }
-	#Guarantee .icon {
+	#GrayBlock .icon {
 		margin: 0 0 20px 0;
 	}
-	#Guarantee h3 {
+	#GrayBlock h3 {
 		text-transform: uppercase;
 		text-align: center;
 		font-weight: bold;
 	}
-	#Guarantee p{
+	#GrayBlock p{
 		text-align: center;
 	}
 
 #Disclaimer {
 	text-align: center;
+	font-size: 0.8em;
 	padding: 40px 0 40px;
 }
 
