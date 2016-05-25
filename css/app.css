@@ -25,6 +25,7 @@
 			#IntroBox h1.download { padding-top: 1.9em;}
 		#IntroBox h2 { font-size: 1rem; padding-top: 0.7em;}
 		#IntroBox p{ font-size: 1rem; }
+		#IntroBox.about{ height: 200px; }
 	#SignUp h2{ font-size: 1.3rem; }
 	#SignUp .left-align { float: none;}
 	#DarkImageBlock.trees {
@@ -59,6 +60,7 @@
 			#IntroBox h1.download { padding-top: 1.4em;}
 		#IntroBox h2 { font-size: 1.3rem; padding-top: 0.4em;}
 		#IntroBox p{ font-size: 1rem; }
+		#IntroBox.about{ height: 300px; }
 	#SignUp h2{ font-size: 1.4rem; }
 	#SignUp .left-align { float: left; }
 	#DarkImageBlock.trees {
@@ -87,6 +89,7 @@
 			#IntroBox h1.download { padding-top: 2.4em; }
 		#IntroBox h2 { font-size: 1.5rem; padding-top: 0.5em;}
 		#IntroBox p{ font-size: 1rem; }
+		#IntroBox.about{ height: 347px; }
 	#SignUp h2{ font-size: 1.8rem; }
 	#SignUp .left-align { float: left; }
 	#DarkImageBlock.trees {
@@ -159,6 +162,7 @@
 	}
 
 #HeaderMobile {
+	position: fixed;
 	top: 0px;
 	width: 100%;
 	z-index: 1000;
@@ -182,7 +186,7 @@
 			float: left;
 			width: 100%;
 			color: #fff;
-			padding: 5px 0 5px 20px;
+			padding: 15px 0 15px 20px;
 			margin: 0;
 			text-align: left;
 		}
@@ -242,7 +246,6 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 }
 	#IntroBox.about{
 		background-image: url(../img/about_banner.jpg);
-		height: 347px;
 		margin: 0 0 40px 0;
 	}
 	#IntroBox.download {
