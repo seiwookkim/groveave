@@ -162,7 +162,6 @@
 	}
 
 #HeaderMobile {
-	position: fixed;
 	top: 0px;
 	width: 100%;
 	z-index: 1000;
@@ -270,6 +269,7 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 #DarkImageBlock {
 	background-position: center;
 	background-size: 100% 100%;
+	background-color: #000;
 	text-align: center;
 	animation: fadeInUp 1s ease-out;
     -moz-animation: fadeInUp 1s ease-out; /* Firefox */
