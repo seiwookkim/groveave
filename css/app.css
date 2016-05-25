@@ -3,11 +3,18 @@
 	overflow: hidden;
 }
 
+.row.bodycontent {
+	margin: 0 0 40px 0;
+}
+
 .columns {
 	overflow: hidden;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+	#Container {
+		border: 0px;
+	}
 	#IntroBox {
 		padding: 2.5em;
 		height: 300px;}
@@ -39,6 +46,9 @@
 }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	#Container {
+		border: 20px solid #004be0;
+	}
 	#IntroBox {
 		padding: 3em;
 		height: 300px;}
@@ -64,6 +74,9 @@
 }
 
 @media screen and (min-width: 64em) {
+	#Container {
+		border: 20px solid #004be0;
+	}
 	#IntroBox {
 		padding: 4em;
 		height: 500px;}
@@ -90,7 +103,6 @@
 
 #Container {
 	position: relative;
-	border: 20px solid #004be0;
 	font-family: "proxima-nova",sans-serif;
 	animation: fadein 1s ease-out;
     -moz-animation: fadein 1s ease-out; /* Firefox */
@@ -122,6 +134,7 @@
 
 	#Header .nav-left {
 		float: left;
+		width: 200px;
 		padding-left: 20px;
 	}
 
@@ -130,8 +143,14 @@
 		margin: 0 auto;
 	}
 
+	#Header nav.nav-right a.navlink {
+		float: right;
+	}
+
 	#Header .nav-right {
 		float: right;
+		width: 200px;
+		text-align: right;
 		padding-right: 20px;
 	}
 
@@ -177,8 +196,8 @@
 #MobileNav.sb-slidebar {
 	z-index: 0;
 	top: 0px;
-	border-right: 20px solid #004be0;
-	border-top: 20px solid #004be0;
+	border-right: 0px solid #004be0;
+	border-top: 0px solid #004be0;
 }
 
 html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-open-right, .sb-close {
@@ -221,6 +240,11 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 	animation-fill-mode:forwards;
 	opacity: 0;
 }
+	#IntroBox.about{
+		background-image: url(../img/about_banner.jpg);
+		height: 347px;
+		margin: 0 0 40px 0;
+	}
 	#IntroBox.download {
 		background: url(../img/grove-ave-ebook-bg.jpg) center center no-repeat;
 	}
@@ -443,6 +467,13 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 	}
 	#GrayBlock p{
 		text-align: center;
+	}
+	#GrayBlock .button {
+		background-color: #004be0;
+		margin-top: 10px;
+		padding-left: 40px;
+		padding-right: 40px;
+		font-weight: bold;
 	}
 
 #Disclaimer {
