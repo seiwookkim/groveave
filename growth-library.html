@@ -67,9 +67,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div id="Container">
   <div id="sb-site">
-      <div class="row" id="Logo">
-        <img src="img/groveave_logo.svg" width="100px"  />
-      </div>
+      <div class="row" id="Header">
+      <nav class="nav-left">
+        <a href="about.html" class="navlink">About</a>
+      </nav>
+      <a href="/"><img src="img/groveave_logo.svg" width="100px" class="logo" /></a>
+      <nav class="nav-right">
+        <a href="growth-library.html" class="navlink">Growth Library</a>
+      </nav>
+    </div>
+    <div class="row" id="HeaderMobile">
+        <div class="border-menu sb-toggle-right">MENU</div>
+      <a href="index.html"><img src="img/groveave_logo.svg" width="100px" class="logo"  /></a>
+    </div>
       <div class="row books" id="DarkImageBlock">
         <div class="large-7 medium-10 small-12 columns large-centered medium-centered small-centered">
           <h1>THE GROWTH LIBRARY</h1>
@@ -509,12 +519,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
     </div>
+    </div>
+    </div>
     <div id="MobileNav" class="sb-slidebar sb-right">
       <nav class="nav-mobile">
-        <a href="coming-soon.html" onclick="ga('send', 'event', 'Navigation Clicks', 'Click', 'Shop');">Shop</a>
-        <a href="coming-soon.html" onclick="ga('send', 'event', 'Navigation Clicks', 'Click', 'About');">About</a>
-        <a href="coming-soon.html" onclick="ga('send', 'event', 'Navigation Clicks', 'Click', 'Login');">Login</a>
-        <a href="coming-soon.html" onclick="ga('send', 'event', 'Navigation Clicks', 'Click', 'Cart');">Cart</a>
+        <a href="/">Home</a>
+        <a href="about.html">About</a>
+        <a href="growth-library.html">Growth Library</a>
       </nav>
     </div>
   </div>
