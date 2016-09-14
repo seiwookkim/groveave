@@ -1,3 +1,6 @@
+h1 {
+	letter-spacing: .02em;
+}
 .row {
 	max-width: 100rem;
 	overflow: hidden;
@@ -6,6 +9,25 @@
 .row.bodycontent {
 	margin: 0 0 40px 0;
 }
+	.row.bodycontent h2{
+		font-family: "proxima-nova",sans-serif;
+		font-weight: bold;
+		line-height: 1.3em;
+		font-size: 1.6em;
+		margin-bottom: .3em;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.row.bodycontent h3{
+		font-family: "proxima-nova",sans-serif;
+		font-weight: normal;
+		line-height: 1.4em;
+		letter-spacing: 0.1em;
+		font-size: 0.8em;
+		margin-bottom: 2.2em;
+		text-transform: uppercase;
+		text-align: center;
+	}
 
 .columns {
 	overflow: hidden;
@@ -23,6 +45,7 @@
 		}
 		#IntroBox h1 { font-size: 2rem;}
 			#IntroBox h1.download { padding-top: 1.9em;}
+			#IntroBox.microhabits h1 {margin-top: 6em;}
 		#IntroBox h2 { font-size: 1rem; padding-top: 0.7em;}
 		#IntroBox p{ font-size: 1rem; }
 		#IntroBox.about{ height: 200px; }
@@ -48,7 +71,7 @@
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 	#Container {
-		border: 20px solid #004be0;
+		
 	}
 	#IntroBox {
 		padding: 3em;
@@ -56,6 +79,10 @@
 		#IntroBox.coming-soon {
 			height: 210px;
 		}
+		#IntroBox.microhabits {
+			height: 650px;
+		}
+			#IntroBox.microhabits h1 {margin-top: 18em;}
 		#IntroBox h1 {font-size: 2.5em;}
 			#IntroBox h1.download { padding-top: 1.4em;}
 		#IntroBox h2 { font-size: 1.3rem; padding-top: 0.4em;}
@@ -77,7 +104,7 @@
 
 @media screen and (min-width: 64em) {
 	#Container {
-		border: 20px solid #004be0;
+		
 	}
 	#IntroBox {
 		padding: 4em;
@@ -85,6 +112,10 @@
 		#IntroBox.coming-soon {
 			height: 350px;
 		}
+		#IntroBox.microhabits {
+			height: 650px;
+		}
+			#IntroBox.microhabits h1 {margin-top: 18em;}
 		#IntroBox h1 {font-size: 3.1em;}
 			#IntroBox h1.download { padding-top: 2.4em; }
 		#IntroBox h2 { font-size: 1.5rem; padding-top: 0.5em;}
@@ -142,8 +173,8 @@
 	}
 
 	#Header .logo {
-		width: 100px;
-		margin: 0 auto;
+		width: 80px;
+		margin: 8px auto 0 auto;
 	}
 
 	#Header nav.nav-right a.navlink {
@@ -170,7 +201,7 @@
 	padding: 10px 0 10px 0;
 }
 	#HeaderMobile .logo {
-		width: 100px;
+		width: 80px;
 		margin: 0 auto;
 	}
 
@@ -250,6 +281,11 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 	#IntroBox.download {
 		background: url(../img/grove-ave-ebook-bg.jpg) center center no-repeat;
 	}
+	#IntroBox.microhabits{
+		background-image: url(../img/microhabits_banner.jpg);
+		margin: 0 0 40px 0;
+	}
+
 	#IntroBox h1 {
 		font-family: "proxima-nova",sans-serif;
 		font-weight: bold;
@@ -258,6 +294,15 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 	}
 	#IntroBox h1.download {
 		color: #ffffff;
+	}
+	#IntroBox.microhabits h1 {
+		font-size: 1.6em;
+		color: #ffffff;
+	}
+	#IntroBox.microhabits p {
+		color: #ffffff;
+		font-size: 0.8em;
+		font-weight: bold;
 	}
 	#IntroBox h2 {
 		font-family: "proxima-nova",sans-serif;
